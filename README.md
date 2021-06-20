@@ -1,1 +1,1 @@
-# puthon_traning
+# Repository for Python training  
