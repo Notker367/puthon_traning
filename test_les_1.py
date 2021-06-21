@@ -5,7 +5,26 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
+from group import Group
 import unittest, time, re
+
+
+def login(driver, username, password):
+    driver.find_element_by_name("user").clear()
+    driver.find_element_by_name("user").send_keys(username)
+    driver.find_element_by_name("pass").clear()
+    driver.find_element_by_name("pass").send_keys(password)
+    driver.find_element_by_xpath("//input[@value='Login']").click()
+
+
+def open_home_page(driver):
+    driver.get("http://localhost/addressbook/")
+
+
+def logout_from_homepage(driver):
+    driver.find_element_by_id("header").click()
+    driver.find_element_by_link_text("home").click()
+    driver.find_element_by_link_text("Logout").click()
 
 
 class UntitledTestCase(unittest.TestCase):
@@ -18,27 +37,27 @@ class UntitledTestCase(unittest.TestCase):
 
     def test_untitled_test_case(self):
         driver = self.driver
-        driver.get("http://localhost/addressbook/")
-        driver.find_element_by_name("user").clear()
-        driver.find_element_by_name("user").send_keys("admin")
-        driver.find_element_by_name("pass").clear()
-        driver.find_element_by_name("pass").send_keys("secret")
-        driver.find_element_by_xpath("//input[@value='Login']").click()
-        driver.find_element_by_id("header").click()
-        driver.find_element_by_link_text("home").click()
-        driver.find_element_by_link_text("Logout").click()
-
-    def is_element_present(self, how, what):
-        try:
-            self.driver.find_element(by=how, value=what)
-        except NoSuchElementException as e:
-            return False
-        return True
+        open_home_page(driver)
+        login(driver, username="admin", password="secret")
+        logout_from_homepage(driver)
 
     def is_alert_present(self):
         try:
             self.driver.switch_to_alert()
         except NoAlertPresentException as e:
+            return False
+        return True
+
+    def test_untitled_test_case_2(self):
+        driver: object = self.driver
+        open_home_page(driver)
+        login(driver, username="admin", password="secret")
+        logout_from_homepage(driver)
+
+    def is_element_present(self, how, what):
+        try:
+            self.driver.find_element(by=how, value=what)
+        except NoSuchElementException as e:
             return False
         return True
 
