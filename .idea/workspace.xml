@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="first test add">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/puthon_traning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/puthon_traning.iml" afterDir="false" />
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="recording while watching lectures 1_3-1_6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_les_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_les_1.py" afterDir="false" />
     </list>
@@ -171,7 +167,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624224706620</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="recording while watching lectures 1_3-1_6">
+      <created>1624304105422</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624304105422</updated>
+    </task>
+    <task id="LOCAL-00007" summary="recording while watching lectures 1_3-1_6">
+      <created>1624304110139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1624304110139</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +201,8 @@
     <MESSAGE value="New project&#10;&#10;This reverts commit 8b796a37" />
     <MESSAGE value="workspase add" />
     <MESSAGE value="first test add" />
-    <option name="LAST_COMMIT_MESSAGE" value="first test add" />
+    <MESSAGE value="recording while watching lectures 1_3-1_6" />
+    <option name="LAST_COMMIT_MESSAGE" value="recording while watching lectures 1_3-1_6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624222129383">
