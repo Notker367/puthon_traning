@@ -19,7 +19,8 @@ class Application:
     default_group_for_tests = Group(
         name="Name_test",
         header="Header_test",
-        footer="Footer_test")
+        footer="Footer_test"
+    )
 
     default_contact_for_tests = Contact(
         firstname=f"test_text{next_num_test()}",

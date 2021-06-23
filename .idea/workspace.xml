@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №4: Перевести тесты с unittest на py.test и реализовать фикстуры&#10;Добавил класс апликейшн, переметил доп методы в него, добавил дефолтные данные для доп меетодов, закинул их в тот же класс, почистил основной файл с тестами">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №4: Перевести тесты с unittest на py.test и реализовать фикстуры">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_les_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_les_1.py" afterDir="false" />
@@ -235,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624477665757</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Задание №4: Перевести тесты с unittest на py.test и реализовать фикстуры">
+      <created>1624479088349</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1624479088349</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +268,8 @@
     <MESSAGE value="Задание №3: Сделать всё то же самое, но для контактов v2" />
     <MESSAGE value="Задание №3: Сделать всё то же самое, но для контактов v2.1" />
     <MESSAGE value="Задание №4: Перевести тесты с unittest на py.test и реализовать фикстуры&#10;Добавил класс апликейшн, переметил доп методы в него, добавил дефолтные данные для доп меетодов, закинул их в тот же класс, почистил основной файл с тестами" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №4: Перевести тесты с unittest на py.test и реализовать фикстуры&#10;Добавил класс апликейшн, переметил доп методы в него, добавил дефолтные данные для доп меетодов, закинул их в тот же класс, почистил основной файл с тестами" />
+    <MESSAGE value="Задание №4: Перевести тесты с unittest на py.test и реализовать фикстуры" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №4: Перевести тесты с unittest на py.test и реализовать фикстуры" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1624476983103">
@@ -308,11 +316,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224131204" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1624475176698">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1624479209140">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224745993" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624475176698" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624479209140" />
     <state x="2689" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624305409386">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
