@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №2: Создать вспомогательные методы и классы">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №3: Сделать всё то же самое, но для контактов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_les_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_les_1.py" afterDir="false" />
     </list>
@@ -52,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_les_1.py">
+  <component name="RunManager" selected="Python tests.pytest for test_les_1.UntitledTestCase.test_case_3_add_new_contact">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,6 +95,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_les_1.UntitledTestCase.test_case_3_add_new_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="puthon_traning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_les_1.UntitledTestCase.test_case_3_add_new_contact&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_les_1.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,9 +130,11 @@
     <list>
       <item itemvalue="Python.test" />
       <item itemvalue="Python tests.pytest in test_les_1.py" />
+      <item itemvalue="Python tests.pytest for test_les_1.UntitledTestCase.test_case_3_add_new_contact" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_les_1.UntitledTestCase.test_case_3_add_new_contact" />
         <item itemvalue="Python tests.pytest in test_les_1.py" />
       </list>
     </recent_temporary>
@@ -188,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624305391615</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Задание №3: Сделать всё то же самое, но для контактов">
+      <created>1624309995091</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1624309995091</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,7 +235,8 @@
     <MESSAGE value="first test add" />
     <MESSAGE value="recording while watching lectures 1_3-1_6" />
     <MESSAGE value="Задание №2: Создать вспомогательные методы и классы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №2: Создать вспомогательные методы и классы" />
+    <MESSAGE value="Задание №3: Сделать всё то же самое, но для контактов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №3: Сделать всё то же самое, но для контактов" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1624308993154">
@@ -233,35 +259,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="582" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624213475597" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1624309508524">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1624474704474">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224949103" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624309508524" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1624309508524">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624474704474" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1624474704474">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224949103" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624309508524" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1624309508524">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624474704474" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1624474704474">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224949103" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624309508524" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1624309508524">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624474704474" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1624474704474">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224949103" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624309508524" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624474704474" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1624224131204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224131204" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1624305417426">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1624310011785">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224745993" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624305417426" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624310011785" />
     <state x="2689" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624305409386">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

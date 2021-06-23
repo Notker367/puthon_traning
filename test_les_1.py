@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 from group import Group
 from contact import Contact
-import unittest, datetime, re, random
+import unittest, datetime, time, re, random
 
 
 def next_num_test():
@@ -28,9 +28,9 @@ contact_for_test_3 = Contact(firstname=f"test_text{next_num_test()}",
                              fax=f"test_text{next_num_test()}",
                              email=f"test_text{next_num_test()}",
                              homepage=f"test_text{next_num_test()}",
-                             bday=f"14",
+                             bday=f"15",
                              bmonth=f"October",
-                             byear=f"33",
+                             byear=f"23",
                              address2=f"test_text{next_num_test()}",
                              phone2=f"test_text{next_num_test()}",
                              notes=f"test_text{next_num_test()}"
@@ -75,10 +75,8 @@ def add_new_group_from_home(driver, group):
 def add_new_contact_from_home(driver, contact):
     driver.find_element_by_link_text("add new").click()
     driver.find_element_by_name("theform").click()
-    driver.find_element_by_name("firstname").click()
     driver.find_element_by_name("firstname").clear()
     driver.find_element_by_name("firstname").send_keys(contact.firstname)
-    driver.find_element_by_name("middlename").click()
     driver.find_element_by_name("middlename").clear()
     driver.find_element_by_name("middlename").send_keys(contact.middlename)
     driver.find_element_by_name("lastname").clear()
@@ -103,23 +101,17 @@ def add_new_contact_from_home(driver, contact):
     driver.find_element_by_name("email").send_keys(contact.email)
     driver.find_element_by_name("homepage").clear()
     driver.find_element_by_name("homepage").send_keys(contact.homepage)
-    driver.find_element_by_name("bday").click()
     Select(driver.find_element_by_name("bday")).select_by_visible_text(contact.bday)
-    driver.find_element_by_xpath("//option[@value='14']").click()
-    driver.find_element_by_name("bmonth").click()
     Select(driver.find_element_by_name("bmonth")).select_by_visible_text(contact.bmonth)
-    driver.find_element_by_xpath("//option[@value='October']").click()
-    driver.find_element_by_name("byear").click()
     driver.find_element_by_name("byear").clear()
     driver.find_element_by_name("byear").send_keys(contact.byear)
-    driver.find_element_by_name("address2").click()
     driver.find_element_by_name("address2").clear()
     driver.find_element_by_name("address2").send_keys(contact.address2)
     driver.find_element_by_name("phone2").clear()
     driver.find_element_by_name("phone2").send_keys(contact.phone2)
-    driver.find_element_by_name("notes").click()
     driver.find_element_by_name("notes").clear()
     driver.find_element_by_name("notes").send_keys(contact.notes)
+    time.sleep(16)
     driver.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
     driver.find_element_by_link_text("home").click()
 
