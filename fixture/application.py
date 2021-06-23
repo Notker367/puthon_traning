@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from model.group import Group
 from model.contact import Contact
+from fixture.session import SessionHelper
 import random
 
 
@@ -15,6 +16,7 @@ class Application:
     def __init__(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
+        self.session = SessionHelper(self)
 
     default_group_for_tests = Group(
         name="Name_test",
@@ -44,23 +46,9 @@ class Application:
         notes=f"test_text{next_num_test()}"
     )
 
-    def login(self, username, password):
-        driver = self.driver
-        driver.find_element_by_name("user").clear()
-        driver.find_element_by_name("user").send_keys(username)
-        driver.find_element_by_name("pass").clear()
-        driver.find_element_by_name("pass").send_keys(password)
-        driver.find_element_by_xpath("//input[@value='Login']").click()
-
     def open_home_page(self):
         driver = self.driver
         driver.get("http://localhost/addressbook/")
-
-    def logout_from_homepage(self):
-        driver = self.driver
-        driver.find_element_by_id("header").click()
-        driver.find_element_by_link_text("home").click()
-        driver.find_element_by_link_text("Logout").click()
 
     def add_new_group_from_home(self, group=default_group_for_tests):
         driver = self.driver
