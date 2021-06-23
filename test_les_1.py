@@ -111,7 +111,6 @@ def add_new_contact_from_home(driver, contact):
     driver.find_element_by_name("phone2").send_keys(contact.phone2)
     driver.find_element_by_name("notes").clear()
     driver.find_element_by_name("notes").send_keys(contact.notes)
-    time.sleep(16)
     driver.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
     driver.find_element_by_link_text("home").click()
 
