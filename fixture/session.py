@@ -17,3 +17,4 @@ class SessionHelper:
         driver.find_element_by_id("header").click()
         driver.find_element_by_link_text("home").click()
         driver.find_element_by_link_text("Logout").click()
+        driver.find_element_by_name("user")
