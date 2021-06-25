@@ -28,6 +28,21 @@ class GroupHelper:
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("home").click()
 
+    def edit_first_from_home(self):
+        driver = self.app.driver
+        driver.find_element_by_link_text("groups").click()
+        driver.find_element_by_name("selected[]").click()
+        driver.find_element_by_name("edit").click()
+        driver.find_element_by_name("group_name").click()
+        driver.find_element_by_name("group_name").send_keys("_new")
+        driver.find_element_by_name("group_header").click()
+        driver.find_element_by_name("group_header").send_keys("_new")
+        driver.find_element_by_name("group_footer").click()
+        driver.find_element_by_name("group_footer").send_keys("_new")
+        driver.find_element_by_name("update").click()
+        driver.find_element_by_link_text("group page").click()
+        driver.find_element_by_link_text("home").click()
+
     def delete_first_from_home(self):
         driver = self.app.driver
         driver.find_element_by_link_text("groups").click()
