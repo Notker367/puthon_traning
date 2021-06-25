@@ -19,8 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №5: Реализовать двухуровневую архитектуру тестов">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="refactor test cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_smoke.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_smoke.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +105,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_group.test_case_2_delete_first_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="puthon_traning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_group.test_case_2_delete_first_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test.test_smoke" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,10 +174,12 @@
       <item itemvalue="Python tests.pytest in test_smoke.py" />
       <item itemvalue="Python tests.pytest for test.test_smoke" />
       <item itemvalue="Python tests.pytest in test" />
+      <item itemvalue="Python tests.pytest for test_group.test_case_2_delete_first_group" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest for test_group.test_case_2_delete_first_group" />
         <item itemvalue="Python tests.pytest in test_smoke.py" />
         <item itemvalue="Python tests.pytest for test.test_smoke" />
       </list>
@@ -293,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624483276267</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="refactor test cases">
+      <created>1624631182815</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1624631182815</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,7 +353,8 @@
     <MESSAGE value="Распределение по пакетам" />
     <MESSAGE value="До клас для сессий" />
     <MESSAGE value="Задание №5: Реализовать двухуровневую архитектуру тестов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №5: Реализовать двухуровневую архитектуру тестов" />
+    <MESSAGE value="refactor test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor test cases" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1624476983103">

@@ -27,3 +27,11 @@ class GroupHelper:
         driver.find_element_by_name("submit").click()
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("home").click()
+
+    def delete_first_from_home(self):
+        driver = self.app.driver
+        driver.find_element_by_link_text("groups").click()
+        driver.find_element_by_name("selected[]").click()
+        driver.find_element_by_name("delete").click()
+        driver.find_element_by_link_text("group page").click()
+        driver.find_element_by_link_text("home").click()
