@@ -19,20 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment=" в методах удаления и модификации контакта добавил в начале переход на страницу контактов">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Разбросал группы тестов по папкам&#10;&#10;Оптимизация ввода данных в формы&#10;&#10;валидация фикстуры перед каждым тестом">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_del_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_del_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_edit_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_edit_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_smoke.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_smoke.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contact/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contact/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_del_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contact/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_edit_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_smoke.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_smoke.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -416,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624793286965</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Разбросал группы тестов по папкам&#10;&#10;Оптимизация ввода данных в формы&#10;&#10;валидация фикстуры перед каждым тестом">
+      <created>1624800283132</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1624800283132</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -454,13 +456,14 @@
     <MESSAGE value="Задание №7: Сделать все тесты создания, удаления, модификации для групп и контактов&#10;Сделал для контактов" />
     <MESSAGE value="разбил тесты по файлам" />
     <MESSAGE value=" в методах удаления и модификации контакта добавил в начале переход на страницу контактов" />
-    <option name="LAST_COMMIT_MESSAGE" value=" в методах удаления и модификации контакта добавил в начале переход на страницу контактов" />
+    <MESSAGE value="Разбросал группы тестов по папкам&#10;&#10;Оптимизация ввода данных в формы&#10;&#10;валидация фикстуры перед каждым тестом" />
+    <option name="LAST_COMMIT_MESSAGE" value="Разбросал группы тестов по папкам&#10;&#10;Оптимизация ввода данных в формы&#10;&#10;валидация фикстуры перед каждым тестом" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2506" y="198" key="#Inspections" timestamp="1624634408185">
+    <state x="2506" y="198" key="#Inspections" timestamp="1624825828682">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2506" y="198" key="#Inspections/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624634408185" />
+    <state x="2506" y="198" key="#Inspections/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624825828682" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624222129383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -478,42 +481,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="582" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624213475597" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1624800078177">
+    <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1624828758922">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224949103" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624800078177" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1624800078177">
+    <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624828758922" />
+    <state width="1899" height="348" key="GridCell.Tab.0.center" timestamp="1624828758922">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224949103" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624800078177" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1624800078177">
+    <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624828758922" />
+    <state width="1899" height="348" key="GridCell.Tab.0.left" timestamp="1624828758922">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224949103" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624800078177" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1624800078177">
+    <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624828758922" />
+    <state width="1899" height="348" key="GridCell.Tab.0.right" timestamp="1624828758922">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224949103" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624800078177" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1624797163024">
+    <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624828758922" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1624828760096">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624797163024" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1624797163023">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624828760096" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1624828760096">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624797163023" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1624797163023">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624828760096" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1624828760096">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624797163023" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1624797163024">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624828760096" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1624828760096">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624797163024" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624828760096" />
     <state x="2695" y="454" key="ReplaceDuplicatesPrompt" timestamp="1624794007881">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -544,9 +547,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fixture/group.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/conftest.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/conftest.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

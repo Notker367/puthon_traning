@@ -1,4 +1,4 @@
 def test_case_3_delete_first_contact(app):
     app.session.login(username="admin", password="secret")
     app.contact.delete_first()
-    app.session.logout_from_homepage()
+    app.session.logout()
