@@ -13,40 +13,47 @@ class GroupHelper:
 
     def create_from_home(self, group=default_group_for_tests):
         driver = self.app.driver
-        driver.find_element_by_link_text("groups").click()
+        self.open_page_group()
         driver.find_element_by_name("new").click()
-        driver.find_element_by_name("group_name").click()
-        driver.find_element_by_name("group_name").clear()
-        driver.find_element_by_name("group_name").send_keys(group.name)
-        driver.find_element_by_name("group_header").click()
-        driver.find_element_by_name("group_header").clear()
-        driver.find_element_by_name("group_header").send_keys(group.header)
-        driver.find_element_by_name("group_footer").click()
-        driver.find_element_by_name("group_footer").clear()
-        driver.find_element_by_name("group_footer").send_keys(group.footer)
+        self.fill_form_group(group)
         driver.find_element_by_name("submit").click()
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("home").click()
 
-    def edit_first_from_home(self):
+    def fill_form_group(self, group=Group()):
+        self.cache_field_value("group_name", group.name)
+        self.cache_field_value("group_header", group.header)
+        self.cache_field_value("group_footer", group.footer)
+
+    def cache_field_value(self, field_name, text):
         driver = self.app.driver
-        driver.find_element_by_link_text("groups").click()
-        driver.find_element_by_name("selected[]").click()
+        if text is not None:
+            driver.find_element_by_name(field_name).click()
+            driver.find_element_by_name(field_name).clear()
+            driver.find_element_by_name(field_name).send_keys(text)
+
+    def edit_first_from_home(self, group):
+        driver = self.app.driver
+        self.open_page_group()
+        self.select_first_group()
         driver.find_element_by_name("edit").click()
-        driver.find_element_by_name("group_name").click()
-        driver.find_element_by_name("group_name").send_keys("_new")
-        driver.find_element_by_name("group_header").click()
-        driver.find_element_by_name("group_header").send_keys("_new")
-        driver.find_element_by_name("group_footer").click()
-        driver.find_element_by_name("group_footer").send_keys("_new")
+        self.fill_form_group(group)
         driver.find_element_by_name("update").click()
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("home").click()
 
+    def select_first_group(self):
+        driver = self.app.driver
+        driver.find_element_by_name("selected[]").click()
+
     def delete_first_from_home(self):
         driver = self.app.driver
-        driver.find_element_by_link_text("groups").click()
-        driver.find_element_by_name("selected[]").click()
+        self.open_page_group()
+        self.select_first_group()
         driver.find_element_by_name("delete").click()
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("home").click()
+
+    def open_page_group(self):
+        driver = self.app.driver
+        driver.find_element_by_link_text("groups").click()
