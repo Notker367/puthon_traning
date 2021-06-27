@@ -79,6 +79,7 @@ class ContactHelper:
 
     def edit_first(self):
         driver = self.app.driver
+        driver.find_element_by_link_text("home").click()
         driver.find_element_by_xpath("//img[@alt='Edit']").click()
         driver.find_element_by_name("firstname").click()
         driver.find_element_by_name("firstname").send_keys("_new")
@@ -121,6 +122,7 @@ class ContactHelper:
 
     def delete_first(self):
         driver = self.app.driver
+        driver.find_element_by_link_text("home").click()
         driver.find_element_by_xpath("//img[@alt='Edit']").click()
         driver.find_element_by_xpath("//input[@value='Delete']").click()
         driver.find_element_by_xpath("//img[@alt='Edit']")

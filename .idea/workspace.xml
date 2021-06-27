@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №7: Сделать все тесты создания, удаления, модификации для групп и контактов&#10;Сделал для контактов">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="разбил тесты по файлам">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_group.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_smoke.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_smoke.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +54,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python\project\puthon_traning\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python\project\puthon_traning" />
       <recent name="D:\python\project\puthon_traning\test" />
@@ -380,7 +382,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624639752992</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="разбил тесты по файлам">
+      <created>1624792572053</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1624792572053</updated>
+    </task>
+    <task id="LOCAL-00025" summary="разбил тесты по файлам">
+      <created>1624792578145</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1624792578145</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -416,7 +432,8 @@
     <MESSAGE value="фикстура вызывается на сессию, а не на конкретный тест&#10;Доработал метод logout_from_homepage - теперь ждет появления окна входа, ддлоя корректноогго выхода из профиля" />
     <MESSAGE value="Задание №7: Сделать все тесты создания, удаления, модификации для групп и контактов&#10;Сделал для групп" />
     <MESSAGE value="Задание №7: Сделать все тесты создания, удаления, модификации для групп и контактов&#10;Сделал для контактов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №7: Сделать все тесты создания, удаления, модификации для групп и контактов&#10;Сделал для контактов" />
+    <MESSAGE value="разбил тесты по файлам" />
+    <option name="LAST_COMMIT_MESSAGE" value="разбил тесты по файлам" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1624634408185">
