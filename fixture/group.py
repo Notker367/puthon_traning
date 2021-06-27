@@ -25,13 +25,6 @@ class GroupHelper:
         self.cache_field_value("group_header", group.header)
         self.cache_field_value("group_footer", group.footer)
 
-    def cache_field_value(self, field_name, text):
-        driver = self.app.driver
-        if text is not None:
-            driver.find_element_by_name(field_name).click()
-            driver.find_element_by_name(field_name).clear()
-            driver.find_element_by_name(field_name).send_keys(text)
-
     def edit_first_from_home(self, group):
         driver = self.app.driver
         self.open_page_group()
@@ -57,3 +50,10 @@ class GroupHelper:
     def open_page_group(self):
         driver = self.app.driver
         driver.find_element_by_link_text("groups").click()
+
+    def cache_field_value(self, field_name, text):
+        driver = self.app.driver
+        if text is not None:
+            driver.find_element_by_name(field_name).click()
+            driver.find_element_by_name(field_name).clear()
+            driver.find_element_by_name(field_name).send_keys(text)

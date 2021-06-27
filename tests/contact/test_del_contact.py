@@ -1,4 +1,2 @@
-def test_case_3_delete_first_contact(app):
-    app.session.login(username="admin", password="secret")
+def test_case_1_delete_first_contact(app):
     app.contact.delete_first()
-    app.session.logout()
