@@ -57,3 +57,8 @@ class GroupHelper:
             driver.find_element_by_name(field_name).click()
             driver.find_element_by_name(field_name).clear()
             driver.find_element_by_name(field_name).send_keys(text)
+
+    def count(self):
+        driver = self.app.driver
+        self.open_page_group()
+        return len(driver.find_elements_by_name("selected[]"))

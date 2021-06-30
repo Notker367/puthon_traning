@@ -79,14 +79,17 @@ class ContactHelper:
         driver = self.app.driver
         self.open_edit_first()
         driver.find_element_by_xpath("//input[@value='Delete']").click()
-        driver.find_element_by_xpath("//img[@alt='Edit']")
 
     def cache_field_value(self, field_name, text):
         driver = self.app.driver
         if text is not None:
-            if field_name == ("bday" or "bmonth"):
+            if field_name in ("bday", "bmonth"):
                 Select(driver.find_element_by_name(field_name)).select_by_visible_text(text)
             else:
                 driver.find_element_by_name(field_name).click()
                 driver.find_element_by_name(field_name).clear()
                 driver.find_element_by_name(field_name).send_keys(text)
+
+    def count(self):
+        driver = self.app.driver
+        return len(driver.find_elements_by_xpath("//img[@alt='Edit']"))
