@@ -49,7 +49,8 @@ class GroupHelper:
 
     def open_page_group(self):
         driver = self.app.driver
-        driver.find_element_by_link_text("groups").click()
+        if not (driver.current_url.endswith("/group.php") and len(driver.find_elements_by_name("new")) > 0):
+            driver.find_element_by_link_text("groups").click()
 
     def cache_field_value(self, field_name, text):
         driver = self.app.driver
