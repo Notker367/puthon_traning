@@ -58,10 +58,15 @@ class ContactHelper:
 
     def create_from_home(self, contact=default_contact_for_tests):
         driver = self.app.driver
-        driver.find_element_by_link_text("add new").click()
+        self.open_addnew_page()
         self.fill_form_contact(contact)
         driver.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
         driver.find_element_by_link_text("home").click()
+
+    def open_addnew_page(self):
+        driver = self.app.driver
+        if not (driver.current_url.endswith("/edit.php") and len(driver.find_elements_by_name("nickname")) > 0):
+            driver.find_element_by_link_text("add new").click()
 
     def edit_first(self, contact):
         driver = self.app.driver
@@ -72,7 +77,7 @@ class ContactHelper:
 
     def open_edit_first(self):
         driver = self.app.driver
-        driver.find_element_by_link_text("home").click()
+        self.open_home_page()
         driver.find_element_by_xpath("//img[@alt='Edit']").click()
 
     def delete_first(self):
@@ -98,3 +103,9 @@ class ContactHelper:
         driver = self.app.driver
         if self.count() == 0:
             self.create_from_home(contact)
+
+    def open_home_page(self):
+        driver = self.app.driver
+        if not (driver.current_url == "http://localhost/addressbook/" and
+                len(driver.find_elements_by_name("MainForm")) > 0):
+            driver.find_element_by_link_text("home").click()

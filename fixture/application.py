@@ -20,7 +20,7 @@ class Application:
         except:
             return False
 
-    def open_home_page(self):
+    def open_login_page(self):
         driver = self.driver
         if not len(driver.find_elements_by_name("LoginForm")) > 0:
             driver.get("http://localhost/addressbook/")
