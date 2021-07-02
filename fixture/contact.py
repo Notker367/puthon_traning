@@ -97,9 +97,10 @@ class ContactHelper:
 
     def count(self):
         driver = self.app.driver
+        self.open_home_page()
         return len(driver.find_elements_by_xpath("//img[@alt='Edit']"))
 
-    def if_not_to_create(self, contact=Contact(firstname="new_contact_for_tests")):
+    def create_if_not_exist(self, contact=Contact(firstname="new_contact_for_tests")):
         driver = self.app.driver
         if self.count() == 0:
             self.create_from_home(contact)
