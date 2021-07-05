@@ -117,7 +117,6 @@ class ContactHelper:
         contacts = []
         td = []
         for element in driver.find_elements_by_name("entry"):
-#        for element in driver.find_elements_by_css_selector("tr.odd"):
             td = element.find_elements_by_tag_name("td")
             text2 = td[1].text
             text1 = td[2].text
