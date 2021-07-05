@@ -63,3 +63,13 @@ class GroupHelper:
         driver = self.app.driver
         self.open_page_group()
         return len(driver.find_elements_by_name("selected[]"))
+
+    def get_group_list(self):
+        driver = self.app.driver
+        self.open_page_group()
+        groups = []
+        for element in driver.find_elements_by_css_selector("span.group"):
+            text = element.text
+            value = element.find_element_by_name("selected[]").get_attribute("value")
+            groups.append(Group(name=text, id=value))
+        return groups
