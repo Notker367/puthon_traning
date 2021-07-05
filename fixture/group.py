@@ -19,6 +19,7 @@ class GroupHelper:
         driver.find_element_by_name("submit").click()
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("home").click()
+        self.group_cache = None
 
     def fill_form_group(self, group=Group()):
         self.cache_field_value("group_name", group.name)
@@ -34,6 +35,7 @@ class GroupHelper:
         driver.find_element_by_name("update").click()
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("home").click()
+        self.group_cache = None
 
     def select_first_group(self):
         driver = self.app.driver
@@ -46,6 +48,7 @@ class GroupHelper:
         driver.find_element_by_name("delete").click()
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("home").click()
+        self.group_cache = None
 
     def open_page_group(self):
         driver = self.app.driver
@@ -64,14 +67,17 @@ class GroupHelper:
         self.open_page_group()
         return len(driver.find_elements_by_name("selected[]"))
 
+    group_cache = None
+
     def get_group_list(self):
-        driver = self.app.driver
-        self.open_page_group()
-        groups = []
-        for element in driver.find_elements_by_css_selector("span.group"):
-            text = element.text
-            value = element.find_element_by_name("selected[]").get_attribute("value")
-            groups.append(Group(name=text, id=value))
-        return groups
+        if self.group_cache is None:
+            driver = self.app.driver
+            self.open_page_group()
+            group_cache = []
+            for element in driver.find_elements_by_css_selector("span.group"):
+                text = element.text
+                value = element.find_element_by_name("selected[]").get_attribute("value")
+                group_cache.append(Group(name=text, id=value))
+        return list(self.group_cache)
 
 
