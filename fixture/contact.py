@@ -110,3 +110,18 @@ class ContactHelper:
         if not (driver.current_url == "http://localhost/addressbook/" and
                 len(driver.find_elements_by_name("MainForm")) > 0):
             driver.find_element_by_link_text("home").click()
+
+    def get_contact_list(self):
+        driver = self.app.driver
+        self.open_home_page()
+        contacts = []
+        td = []
+        for element in driver.find_elements_by_name("entry"):
+#        for element in driver.find_elements_by_css_selector("tr.odd"):
+            td = element.find_elements_by_tag_name("td")
+            text2 = td[1].text
+            text1 = td[2].text
+            value = element.find_element_by_name("selected[]").get_attribute("value")
+            contacts.append(Contact(firstname=text1, lastname=text2, id=value))
+        return contacts
+
