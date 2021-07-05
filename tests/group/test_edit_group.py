@@ -1,16 +1,18 @@
 from model.group import Group
+from random import randrange
 
 
 def test_case_1_edit_name_first_group(app):
     if app.group.count() == 0:
         app.group.create_from_home(Group(name="new_group_for_edit"))
     odl_groups = app.group.get_group_list()
+    index = randrange(len(odl_groups))
     group = Group(name="New_name")
-    group.id = odl_groups[0].id
-    app.group.edit_first_from_home(group)
+    group.id = odl_groups[index].id
+    app.group.edit_by_index(index, group)
     assert len(odl_groups) == app.group.count()
     new_groups = app.group.get_group_list()
-    odl_groups[0] = group
+    odl_groups[index] = group
     assert sorted(odl_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
 
 # def test_case_2_edit_footer_first_group(app):

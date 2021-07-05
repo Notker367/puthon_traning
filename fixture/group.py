@@ -28,8 +28,12 @@ class GroupHelper:
 
     def edit_first_from_home(self, group):
         driver = self.app.driver
+        self.edit_by_index(0)
+
+    def edit_by_index(self, index, group):
+        driver = self.app.driver
         self.open_page_group()
-        self.select_first_group()
+        self.select_by_index(index)
         driver.find_element_by_name("edit").click()
         self.fill_form_group(group)
         driver.find_element_by_name("update").click()
@@ -39,12 +43,20 @@ class GroupHelper:
 
     def select_first_group(self):
         driver = self.app.driver
-        driver.find_element_by_name("selected[]").click()
+        self.select_by_index(0)
+
+    def select_by_index(self, index):
+        driver = self.app.driver
+        driver.find_elements_by_name("selected[]")[index].click()
 
     def delete_first_from_home(self):
         driver = self.app.driver
+        self.delete_by_index(0)
+
+    def delete_by_index(self, index):
+        driver = self.app.driver
         self.open_page_group()
-        self.select_first_group()
+        self.select_by_index(index)
         driver.find_element_by_name("delete").click()
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("home").click()
@@ -79,5 +91,3 @@ class GroupHelper:
                 value = element.find_element_by_name("selected[]").get_attribute("value")
                 self.group_cache.append(Group(name=text, id=value))
         return list(self.group_cache)
-
-
