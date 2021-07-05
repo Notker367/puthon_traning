@@ -8,8 +8,8 @@ def test_case_1_edit_name_first_group(app):
     group = Group(name="New_name")
     group.id = odl_groups[0].id
     app.group.edit_first_from_home(group)
+    assert len(odl_groups) == app.group.count()
     new_groups = app.group.get_group_list()
-    assert len(odl_groups) == len(new_groups)
     odl_groups[0] = group
     assert sorted(odl_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
 
