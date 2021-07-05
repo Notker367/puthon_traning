@@ -71,20 +71,32 @@ class ContactHelper:
 
     def edit_first(self, contact):
         driver = self.app.driver
-        self.open_edit_first()
+        self.edit_by_index(0,contact)
+
+    def edit_by_index(self,index, contact):
+        driver = self.app.driver
+        self.open_editor_by_index(index)
         self.fill_form_contact(contact)
         driver.find_element_by_name("update").click()
         driver.find_element_by_link_text("home page").click()
         self.contact_cache = None
 
-    def open_edit_first(self):
+    def open_editor_first(self):
+        driver = self.app.driver
+        self.open_editor_by_index(0)
+
+    def open_editor_by_index(self, index):
         driver = self.app.driver
         self.open_home_page()
-        driver.find_element_by_xpath("//img[@alt='Edit']").click()
+        driver.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
 
     def delete_first(self):
         driver = self.app.driver
-        self.open_edit_first()
+        self.delete_by_index(0)
+
+    def delete_by_index(self, index):
+        driver = self.app.driver
+        self.open_editor_by_index(index)
         driver.find_element_by_xpath("//input[@value='Delete']").click()
         self.contact_cache = None
 
@@ -128,4 +140,3 @@ class ContactHelper:
                 value = element.find_element_by_name("selected[]").get_attribute("value")
                 self.contact_cache.append(Contact(firstname=text1, lastname=text2, id=value))
         return list(self.contact_cache)
-
