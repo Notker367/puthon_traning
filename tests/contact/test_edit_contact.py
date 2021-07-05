@@ -8,8 +8,8 @@ def test_case_1_edit_first_contact(app):
     contact = Contact(firstname="New_fname", lastname="New_lname")
     contact.id = odl_contacts[0].id
     app.contact.edit_first(contact)
+    assert len(odl_contacts) == app.contact.count()
     new_contacts = app.contact.get_contact_list()
-    assert len(odl_contacts) == len(new_contacts)
     odl_contacts[0] = contact
     assert sorted(odl_contacts, key=Contact.id_or_max) == \
            sorted(new_contacts, key=Contact.id_or_max)

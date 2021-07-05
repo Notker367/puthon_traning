@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="из лекции">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/group/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/group/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_del_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/group/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_edit_group.py" afterDir="false" />
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №12: Реализовать кеширование при загрузке списков групп и контактов&#10;for group">
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contact/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_add_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <recent name="D:\python\project\puthon_traning\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in group">
+  <component name="RunManager" selected="Python tests.pytest in contact">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,19 +110,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_add_group.test_case_1_add_new_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_add_contact.test_case_1_add_new_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/group" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/contact" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add_group.test_case_1_add_new_group&quot;" />
+      <option name="_new_target" value="&quot;test_add_contact.test_case_1_add_new_contact&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -143,22 +142,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_edit_contact.test_case_1_edit_first_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="puthon_traning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/contact" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_edit_contact.test_case_1_edit_first_contact&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest for test_edit_group.test_case_1_edit_name_first_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,6 +156,22 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_edit_group.test_case_1_edit_name_first_group&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="puthon_traning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/contact" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/contact&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -193,19 +192,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.test" />
-      <item itemvalue="Python tests.pytest for test_edit_contact.test_case_1_edit_first_contact" />
-      <item itemvalue="Python tests.pytest for test_add_group.test_case_1_add_new_group" />
       <item itemvalue="Python tests.pytest for test_del_group.test_case_1_delete_first_group" />
       <item itemvalue="Python tests.pytest for test_edit_group.test_case_1_edit_name_first_group" />
       <item itemvalue="Python tests.pytest in group" />
+      <item itemvalue="Python tests.pytest for test_add_contact.test_case_1_add_new_contact" />
+      <item itemvalue="Python tests.pytest in contact" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in contact" />
+        <item itemvalue="Python tests.pytest for test_add_contact.test_case_1_add_new_contact" />
         <item itemvalue="Python tests.pytest in group" />
         <item itemvalue="Python tests.pytest for test_edit_group.test_case_1_edit_name_first_group" />
         <item itemvalue="Python tests.pytest for test_del_group.test_case_1_delete_first_group" />
-        <item itemvalue="Python tests.pytest for test_add_group.test_case_1_add_new_group" />
-        <item itemvalue="Python tests.pytest for test_edit_contact.test_case_1_edit_first_contact" />
       </list>
     </recent_temporary>
   </component>
@@ -507,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625517122420</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Задание №12: Реализовать кеширование при загрузке списков групп и контактов&#10;for group">
+      <created>1625517334470</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1625517334470</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +529,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задание №4: Перевести тесты с unittest на py.test и реализовать фикстуры&#10;ХотФикс добавил в фикстуре создание экземпляра класса" />
     <MESSAGE value="Распределение по пакетам" />
     <MESSAGE value="До клас для сессий" />
     <MESSAGE value="Задание №5: Реализовать двухуровневую архитектуру тестов" />
@@ -548,7 +553,8 @@
     <MESSAGE value="Задание №11: Реализовать проверки в виде сравнения списков&#10;for edit" />
     <MESSAGE value="add cache" />
     <MESSAGE value="из лекции" />
-    <option name="LAST_COMMIT_MESSAGE" value="из лекции" />
+    <MESSAGE value="Задание №12: Реализовать кеширование при загрузке списков групп и контактов&#10;for group" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №12: Реализовать кеширование при загрузке списков групп и контактов&#10;for group" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1624825828682">
@@ -572,26 +578,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="582" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624213475597" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625517278922">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625517810823">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625508785452" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625517278922" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625517278922">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625517810823" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625517810823">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625508785452" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625517278922" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625517278922">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625517810823" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625517810822">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625508785452" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625517278922" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625517278922">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625517810822" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625517810823">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625508785452" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625517278922" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625517810823" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1625509979573">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

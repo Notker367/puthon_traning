@@ -70,8 +70,8 @@ class GroupHelper:
     group_cache = None
 
     def get_group_list(self):
+        driver = self.app.driver
         if self.group_cache is None:
-            driver = self.app.driver
             self.open_page_group()
             self.group_cache = []
             for element in driver.find_elements_by_css_selector("span.group"):

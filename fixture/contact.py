@@ -62,6 +62,7 @@ class ContactHelper:
         self.fill_form_contact(contact)
         driver.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
         driver.find_element_by_link_text("home").click()
+        self.contact_cache = None
 
     def open_addnew_page(self):
         driver = self.app.driver
@@ -74,6 +75,7 @@ class ContactHelper:
         self.fill_form_contact(contact)
         driver.find_element_by_name("update").click()
         driver.find_element_by_link_text("home page").click()
+        self.contact_cache = None
 
     def open_edit_first(self):
         driver = self.app.driver
@@ -84,6 +86,7 @@ class ContactHelper:
         driver = self.app.driver
         self.open_edit_first()
         driver.find_element_by_xpath("//input[@value='Delete']").click()
+        self.contact_cache = None
 
     def cache_field_value(self, field_name, text):
         driver = self.app.driver
@@ -111,16 +114,18 @@ class ContactHelper:
                 len(driver.find_elements_by_name("MainForm")) > 0):
             driver.find_element_by_link_text("home").click()
 
+    contact_cache = None
+
     def get_contact_list(self):
         driver = self.app.driver
-        self.open_home_page()
-        contacts = []
-        td = []
-        for element in driver.find_elements_by_name("entry"):
-            td = element.find_elements_by_tag_name("td")
-            text2 = td[1].text
-            text1 = td[2].text
-            value = element.find_element_by_name("selected[]").get_attribute("value")
-            contacts.append(Contact(firstname=text1, lastname=text2, id=value))
-        return contacts
+        if self.contact_cache is None:
+            self.open_home_page()
+            self.contact_cache = []
+            for element in driver.find_elements_by_name("entry"):
+                td = element.find_elements_by_tag_name("td")
+                text2 = td[1].text
+                text1 = td[2].text
+                value = element.find_element_by_name("selected[]").get_attribute("value")
+                self.contact_cache.append(Contact(firstname=text1, lastname=text2, id=value))
+        return list(self.contact_cache)
 
