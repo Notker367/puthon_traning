@@ -73,11 +73,11 @@ class GroupHelper:
         if self.group_cache is None:
             driver = self.app.driver
             self.open_page_group()
-            group_cache = []
+            self.group_cache = []
             for element in driver.find_elements_by_css_selector("span.group"):
                 text = element.text
                 value = element.find_element_by_name("selected[]").get_attribute("value")
-                group_cache.append(Group(name=text, id=value))
+                self.group_cache.append(Group(name=text, id=value))
         return list(self.group_cache)
 
 
