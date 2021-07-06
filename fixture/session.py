@@ -28,7 +28,7 @@ class SessionHelper:
         driver = self.app.driver
         return self.get_logged_user() == username
 
-    def get_logged_user(self, username):
+    def get_logged_user(self):
         driver = self.app.driver
         return driver.find_element_by_xpath("//div[@id='top']/form/b").text[1:-1]
 
