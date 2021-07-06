@@ -1,6 +1,6 @@
 from model.contact import Contact
 from selenium.webdriver.support.ui import Select
-import random
+import random, re
 
 
 def next_num_test():
@@ -23,14 +23,14 @@ class ContactHelper:
         home=f"test_text{next_num_test()}",
         mobile=f"test_text{next_num_test()}",
         work=f"test_text{next_num_test()}",
-        fax=f"test_text{next_num_test()}",
+        phone2=f"test_text{next_num_test()}",
         email=f"test_text{next_num_test()}",
         homepage=f"test_text{next_num_test()}",
         bday=f"15",
         bmonth=f"October",
         byear=f"23",
         address2=f"test_text{next_num_test()}",
-        phone2=f"test_text{next_num_test()}",
+        fax=f"test_text{next_num_test()}",
         notes=f"test_text{next_num_test()}"
     )
 
@@ -46,7 +46,7 @@ class ContactHelper:
         self.cache_field_value("home", contact.home)
         self.cache_field_value("mobile", contact.mobile)
         self.cache_field_value("work", contact.work)
-        self.cache_field_value("fax", contact.fax)
+        self.cache_field_value("phone2", contact.phone2)
         self.cache_field_value("email", contact.email)
         self.cache_field_value("homepage", contact.homepage)
         self.cache_field_value("bday", contact.bday)
@@ -71,9 +71,9 @@ class ContactHelper:
 
     def edit_first(self, contact):
         driver = self.app.driver
-        self.edit_by_index(0,contact)
+        self.edit_by_index(0, contact)
 
-    def edit_by_index(self,index, contact):
+    def edit_by_index(self, index, contact):
         driver = self.app.driver
         self.open_editor_by_index(index)
         self.fill_form_contact(contact)
@@ -138,5 +138,40 @@ class ContactHelper:
                 text2 = td[1].text
                 text1 = td[2].text
                 value = element.find_element_by_name("selected[]").get_attribute("value")
-                self.contact_cache.append(Contact(firstname=text1, lastname=text2, id=value))
+                all_phones = td[5].text.splitlines()
+                while len(all_phones) < 4:
+                    all_phones.append("")
+                self.contact_cache.append(Contact(firstname=text1, lastname=text2, id=value,
+                                                  home=all_phones[0], mobile=all_phones[1],
+                                                  work=all_phones[2], phone2=all_phones[3]))
         return list(self.contact_cache)
+
+    def open_view_by_index(self, index):
+        driver = self.app.driver
+        self.open_home_page()
+        row = driver.find_elements_by_name("entry")[index]
+        cell = row.find_elements_by_tag_name("td")[6]
+        cell.find_element_by_tag_name("a").click()
+
+    def get_contact_info_from_edit_page(self, index=0):
+        driver = self.app.driver
+        self.open_editor_by_index(index)
+        firstname = driver.find_element_by_name("firstname").get_attribute("value")
+        lastname = driver.find_element_by_name("lastname").get_attribute("value")
+        id = driver.find_element_by_name("id").get_attribute("value")
+        home = driver.find_element_by_name("home").get_attribute("value")
+        mobile = driver.find_element_by_name("mobile").get_attribute("value")
+        work = driver.find_element_by_name("work").get_attribute("value")
+        phone2 = driver.find_element_by_name("phone2").get_attribute("value")
+        return Contact(firstname=firstname, lastname=lastname, id=id,
+                       home=home, mobile=mobile, work=work, phone2=phone2)
+
+    def get_contact_from_view_page(self, index=0):
+        driver = self.app.driver
+        self.open_view_by_index(index)
+        text = driver.find_element_by_id("content").text
+        home = re.search("H: (.*)", text).group(1)
+        mobile = re.search("M: (.*)", text).group(1)
+        work = re.search("W: (.*)", text).group(1)
+        phone2 = re.search("P: (.*)", text).group(1)
+        return Contact(home=home, mobile=mobile, work=work, phone2=phone2)

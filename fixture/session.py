@@ -26,7 +26,11 @@ class SessionHelper:
 
     def is_logged_in_as(self, username):
         driver = self.app.driver
-        return driver.find_element_by_xpath("//div[@id='top']/form/b").text == f"({username})"
+        return self.get_logged_user() == username
+
+    def get_logged_user(self, username):
+        driver = self.app.driver
+        return driver.find_element_by_xpath("//div[@id='top']/form/b").text[1:-1]
 
     def is_logged_in(self):
         driver = self.app.driver
@@ -39,4 +43,3 @@ class SessionHelper:
             else:
                 self.logout()
         self.login(username, password)
-
