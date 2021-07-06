@@ -1,4 +1,5 @@
 from sys import maxsize
+import re
 
 
 class Contact:
@@ -15,6 +16,8 @@ class Contact:
                  work=None,
                  fax=None,
                  email=None,
+                 email2=None,
+                 email3=None,
                  homepage=None,
                  bday=None,
                  bmonth=None,
@@ -23,7 +26,9 @@ class Contact:
                  phone2=None,
                  notes=None,
                  id=None,
-                 all_phones_from_home_page=None
+                 all_phones_from_home_page=None,
+                 all_emails_from_home_page=None
+
                  ):
         self.notes = notes
         self.phone2 = phone2
@@ -33,6 +38,8 @@ class Contact:
         self.bday = bday
         self.homepage = homepage
         self.email = email
+        self.email2 = email2
+        self.email3 = email3
         self.fax = fax
         self.work = work
         self.mobile = mobile
@@ -46,6 +53,7 @@ class Contact:
         self.firstname = firstname
         self.id = id
         self.all_phones_from_home_page = all_phones_from_home_page
+        self.all_emails_from_home_page = all_emails_from_home_page
 
     def __repr__(self):
         return "%s:%s %s" % (self.id, self.firstname, self.lastname)
@@ -63,3 +71,5 @@ class Contact:
             return int(self.id)
         else:
             return maxsize
+
+

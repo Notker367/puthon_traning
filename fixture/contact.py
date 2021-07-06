@@ -137,9 +137,12 @@ class ContactHelper:
                 td = element.find_elements_by_tag_name("td")
                 text2 = td[1].text
                 text1 = td[2].text
+                address = td[3].text
+                all_emails = td[4].text
                 value = element.find_element_by_name("selected[]").get_attribute("value")
                 all_phones = td[5].text
                 self.contact_cache.append(Contact(firstname=text1, lastname=text2, id=value,
+                                                  address=address, all_emails_from_home_page=all_emails,
                                                   all_phones_from_home_page=all_phones))
         return list(self.contact_cache)
 
@@ -153,15 +156,24 @@ class ContactHelper:
     def get_contact_info_from_edit_page(self, index=0):
         driver = self.app.driver
         self.open_editor_by_index(index)
-        firstname = driver.find_element_by_name("firstname").get_attribute("value")
-        lastname = driver.find_element_by_name("lastname").get_attribute("value")
-        id = driver.find_element_by_name("id").get_attribute("value")
-        home = driver.find_element_by_name("home").get_attribute("value")
-        mobile = driver.find_element_by_name("mobile").get_attribute("value")
-        work = driver.find_element_by_name("work").get_attribute("value")
-        phone2 = driver.find_element_by_name("phone2").get_attribute("value")
+        firstname = self.get_attribute_from_find_by_name("firstname")
+        lastname = self.get_attribute_from_find_by_name("lastname")
+        id = self.get_attribute_from_find_by_name("id")
+        home = self.get_attribute_from_find_by_name("home")
+        mobile = self.get_attribute_from_find_by_name("mobile")
+        work = self.get_attribute_from_find_by_name("work")
+        phone2 = self.get_attribute_from_find_by_name("phone2")
+        email = self.get_attribute_from_find_by_name("email")
+        email2 = self.get_attribute_from_find_by_name("email2")
+        email3 = self.get_attribute_from_find_by_name("email3")
+        address = self.get_attribute_from_find_by_name("address")
         return Contact(firstname=firstname, lastname=lastname, id=id,
-                       home=home, mobile=mobile, work=work, phone2=phone2)
+                       home=home, mobile=mobile, work=work, phone2=phone2,
+                       email=email, email2=email2, email3=email3, address=address)
+
+    def get_attribute_from_find_by_name(self, name, attribute="value"):
+        driver = self.app.driver
+        return driver.find_element_by_name(name).get_attribute(attribute)
 
     def get_contact_from_view_page(self, index=0):
         driver = self.app.driver
@@ -172,3 +184,14 @@ class ContactHelper:
         work = re.search("W: (.*)", text).group(1)
         phone2 = re.search("P: (.*)", text).group(1)
         return Contact(home=home, mobile=mobile, work=work, phone2=phone2)
+
+    def clear_merge_attributes(self, s):
+        driver = self.app.driver
+        return re.sub("[() -]", "", s)
+
+    def merge_for_contact_it_attributes(self, attributes):
+        return "\n".join(
+            filter(lambda x: x != "",
+                   map(self.clear_merge_attributes,
+                       filter(lambda x: x is not None,
+                              attributes))))
