@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="6.5">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №18: Реализовать генераторы тестовых данных&#10;генератор для контактов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/group/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contact/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_add_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
       <recent name="D:\python\project\puthon_traning\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.contact">
+  <component name="RunManager" selected="Python tests.pytest for test_add_contact.test_case_1_add_new_contact">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,6 +152,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_add_contact.test_case_1_add_new_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="puthon_traning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/contact" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_add_contact.test_case_1_add_new_contact&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_add_group.test_case_1_add_new_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,37 +200,21 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_del_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="puthon_traning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/group/test_del_group.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.test" />
       <item itemvalue="Python.group" />
       <item itemvalue="Python tests.pytest for test_add_group.test_case_1_add_new_group" />
-      <item itemvalue="Python tests.pytest in test_del_group.py" />
       <item itemvalue="Python tests.pytest in test_add_group.py" />
       <item itemvalue="Python.contact" />
+      <item itemvalue="Python tests.pytest for test_add_contact.test_case_1_add_new_contact" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_add_contact.test_case_1_add_new_contact" />
         <item itemvalue="Python.contact" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python.group" />
         <item itemvalue="Python tests.pytest for test_add_group.test_case_1_add_new_group" />
-        <item itemvalue="Python tests.pytest in test_del_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -230,27 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624213190661</updated>
-    </task>
-    <task id="LOCAL-00006" summary="recording while watching lectures 1_3-1_6">
-      <created>1624304105422</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1624304105422</updated>
-    </task>
-    <task id="LOCAL-00007" summary="recording while watching lectures 1_3-1_6">
-      <created>1624304110139</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1624304110139</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Задание №2: Создать вспомогательные методы и классы">
-      <created>1624305391615</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1624305391615</updated>
     </task>
     <task id="LOCAL-00009" summary="Задание №3: Сделать всё то же самое, но для контактов">
       <created>1624309995091</created>
@@ -574,7 +551,28 @@
       <option name="project" value="LOCAL" />
       <updated>1625683544664</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="лекц">
+      <created>1625687129227</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1625687129227</updated>
+    </task>
+    <task id="LOCAL-00056" summary="лекц">
+      <created>1625687132383</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1625687132383</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Задание №18: Реализовать генераторы тестовых данных&#10;генератор для контактов">
+      <created>1625687405711</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1625687405711</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,8 +588,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="изменения в контакты" />
-    <MESSAGE value="Задание №8: Реализовать проверку валидности фикстуры и проверку состояния сессии&#10;Правки" />
     <MESSAGE value="Задание №9: Обеспечить выполнение предусловий в тестах для удаления и модификации для групп и контактов" />
     <MESSAGE value="Задание №9: Обеспечить выполнение предусловий в тестах для удаления и модификации для групп и контактов&#10;little bit optimized (dont know need it or not)" />
     <MESSAGE value="Задание №10: оптимизировать переходы между страницами&#10;из лекции" />
@@ -615,7 +611,9 @@
     <MESSAGE value="Задание №15: Параметризовать тесты для создания групп и контактов" />
     <MESSAGE value="Задание №17: Реализовать загрузку информации о тестируемом приложении из конфигурационного файла" />
     <MESSAGE value="6.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="6.5" />
+    <MESSAGE value="лекц" />
+    <MESSAGE value="Задание №18: Реализовать генераторы тестовых данных&#10;генератор для контактов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №18: Реализовать генераторы тестовых данных&#10;генератор для контактов" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1625610618132">
@@ -649,26 +647,26 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625672871328" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625686857211">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625687738095">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625686857211" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625686857211">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625687738095" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625687738095">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625686857211" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625686857211">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625687738095" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625687738095">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625686857211" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625686857211">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625687738095" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625687738095">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625686857211" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625687738095" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1625681528782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
