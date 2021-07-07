@@ -1,10 +1,12 @@
 from fixture.application import Application
 import pytest
 import json
+import importlib
 import os.path
 
 fixture = None
 target = None
+
 
 @pytest.fixture(scope="session", autouse=True)
 def stop(request):
@@ -34,3 +36,14 @@ def app(request):
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="firefox")
     parser.addoption("--target", action="store", default="target.json")
+
+
+def pytest_generate_tests(metafunc):
+    for fixture in metafunc.fixturenames:
+        if fixture.startswith("data_"):
+            test_data = load_form_module(fixture[5:])
+            metafunc.parametrize(fixture, test_data, ids=[str(x) for x in test_data])
+
+
+def load_form_module(module):
+    return importlib.import_module("data.%s" % module).test_data
