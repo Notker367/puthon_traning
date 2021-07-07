@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №17: Реализовать загрузку информации о тестируемом приложении из конфигурационного файла">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="6.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/group/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +104,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator/group.py" />
-      <option name="PARAMETERS" value="-n 10 -f data/test.json" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -206,8 +208,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_add_group.py" />
-        <item itemvalue="Python tests.pytest for test_add_group.test_case_1_add_new_group" />
         <item itemvalue="Python.group" />
+        <item itemvalue="Python tests.pytest for test_add_group.test_case_1_add_new_group" />
         <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest in test_edit_contact.py" />
       </list>
@@ -223,13 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624213190661</updated>
-    </task>
-    <task id="LOCAL-00005" summary="first test add">
-      <created>1624224706620</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1624224706620</updated>
     </task>
     <task id="LOCAL-00006" summary="recording while watching lectures 1_3-1_6">
       <created>1624304105422</created>
@@ -567,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625675184948</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="6.5">
+      <created>1625683544664</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1625683544664</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +585,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Разбросал группы тестов по папкам&#10;&#10;Оптимизация ввода данных в формы&#10;&#10;валидация фикстуры перед каждым тестом" />
     <MESSAGE value="изменения в контакты" />
     <MESSAGE value="Задание №8: Реализовать проверку валидности фикстуры и проверку состояния сессии&#10;Правки" />
     <MESSAGE value="Задание №9: Обеспечить выполнение предусловий в тестах для удаления и модификации для групп и контактов" />
@@ -608,18 +609,19 @@
     <MESSAGE value="fix get_logged_user" />
     <MESSAGE value="Задание №15: Параметризовать тесты для создания групп и контактов" />
     <MESSAGE value="Задание №17: Реализовать загрузку информации о тестируемом приложении из конфигурационного файла" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №17: Реализовать загрузку информации о тестируемом приложении из конфигурационного файла" />
+    <MESSAGE value="6.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1625610618132">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2506" y="198" key="#Inspections/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625610618132" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625681853341">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625686399926">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681853341" />
-    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625674843605" />
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625686399926" />
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1625618959530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -642,26 +644,26 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625672871328" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625683518821">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625686857211">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625683518821" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625683518821">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625686857211" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625686857211">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625683518821" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625683518821">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625686857211" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625686857211">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625683518821" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625683518821">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625686857211" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625686857211">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625683518821" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625686857211" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1625681528782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
