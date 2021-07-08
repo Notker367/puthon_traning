@@ -122,7 +122,7 @@ class ContactHelper:
 
     def open_home_page(self):
         driver = self.app.driver
-        if not (driver.current_url == "http://localhost/addressbook/" and
+        if not (driver.current_url == self.app.base_url and
                 len(driver.find_elements_by_name("MainForm")) > 0):
             driver.find_element_by_link_text("home").click()
 
