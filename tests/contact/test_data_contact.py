@@ -2,8 +2,8 @@ from model.contact import Contact
 import random
 
 
-def test_case_1_rdm_contact_data_from_homepage(app):
-    app.contact.create_if_not_exist(Contact(firstname="new_contact_for_edit"))
+def test_case_1_rdm_contact_data_from_homepage(app, db):
+    app.contact.create_if_not_exist(db=db,contact=Contact(firstname="new_contact_for_edit"))
     old_contacts = app.contact.get_contact_list()
     index = random.randrange(len(old_contacts))
     contact_from_home_page = old_contacts[index]
@@ -30,3 +30,5 @@ def all_phones(contact):
             contact.mobile,
             contact.work,
             contact.phone2]
+
+def test_case_1_all_contact_data_from_homepage(app, db):

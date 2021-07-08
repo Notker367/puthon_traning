@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="7_8 work">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check_db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_db_connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/contact/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/contact/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_del_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/contact/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_edit_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/group/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/group/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_del_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/group/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_edit_group.py" afterDir="false" />
-    </list>
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №20: Переделать тесты, чтобы сравнивались данные, загруженные из БД" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +63,7 @@
       <recent name="D:\python\project\puthon_traning\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in group">
+  <component name="RunManager" selected="Python tests.pytest for test_data_contact.test_case_1_rdm_contact_data_from_homepage">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,7 +106,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_del_contact.test_case_1_delete_rdm_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_data_contact.test_case_1_rdm_contact_data_from_homepage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,7 +118,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_del_contact.test_case_1_delete_rdm_contact&quot;" />
+      <option name="_new_target" value="&quot;test_data_contact.test_case_1_rdm_contact_data_from_homepage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -199,19 +188,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.test" />
-      <item itemvalue="Python tests.pytest for test_del_contact.test_case_1_delete_rdm_contact" />
       <item itemvalue="Python tests.pytest for test_edit_contact.test_case_1_edit_rdm_contact" />
       <item itemvalue="Python tests.pytest for test_edit_group.test_case_1_edit_rdm_group" />
       <item itemvalue="Python tests.pytest in contact" />
       <item itemvalue="Python tests.pytest in group" />
+      <item itemvalue="Python tests.pytest for test_data_contact.test_case_1_rdm_contact_data_from_homepage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_data_contact.test_case_1_rdm_contact_data_from_homepage" />
         <item itemvalue="Python tests.pytest in group" />
         <item itemvalue="Python tests.pytest in contact" />
         <item itemvalue="Python tests.pytest for test_edit_group.test_case_1_edit_rdm_group" />
         <item itemvalue="Python tests.pytest for test_edit_contact.test_case_1_edit_rdm_contact" />
-        <item itemvalue="Python tests.pytest for test_del_contact.test_case_1_delete_rdm_contact" />
       </list>
     </recent_temporary>
   </component>
@@ -225,13 +214,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624213190661</updated>
-    </task>
-    <task id="LOCAL-00020" summary="фикстура вызывается на сессию, а не на конкретный тест&#10;Доработал метод logout_from_homepage - теперь ждет появления окна входа, ддлоя корректноогго выхода из профиля">
-      <created>1624632698383</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1624632698383</updated>
     </task>
     <task id="LOCAL-00021" summary="фикстура вызывается на сессию, а не на конкретный тест&#10;Доработал метод logout_from_homepage - теперь ждет появления окна входа, ддлоя корректноогго выхода из профиля">
       <created>1624632706292</created>
@@ -569,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625770944492</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Задание №20: Переделать тесты, чтобы сравнивались данные, загруженные из БД">
+      <created>1625778888734</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1625778888734</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +574,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add cache" />
     <MESSAGE value="Задание №12: Реализовать кеширование при загрузке списков групп и контактов&#10;for group" />
     <MESSAGE value="Задание №12: Реализовать кеширование при загрузке списков групп и контактов&#10;for contact" />
     <MESSAGE value="из лекции" />
@@ -610,7 +598,8 @@
     <MESSAGE value="Задание №17: Реализовать загрузку информации о тестируемом приложении из конфигурационного файла&#10; fix" />
     <MESSAGE value="Задание №14: Реализовать проверки для всех полей контакта на главной странице&#10;&#10; fix" />
     <MESSAGE value="7_8 work" />
-    <option name="LAST_COMMIT_MESSAGE" value="7_8 work" />
+    <MESSAGE value="Задание №20: Переделать тесты, чтобы сравнивались данные, загруженные из БД" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №20: Переделать тесты, чтобы сравнивались данные, загруженные из БД" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1625743895853">
@@ -692,11 +681,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224131204" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625766626028">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625778914453">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625616038895" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625766626028" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625778914453" />
     <state x="2689" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624833409928">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
