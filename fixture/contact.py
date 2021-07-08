@@ -216,3 +216,22 @@ class ContactHelper:
                    map(map_clearing,
                        filter(lambda x: x is not None,
                               attributes))))
+
+    def get_contact_by_id(self, id):
+        driver = self.app.driver
+        self.open_home_page()
+        table = driver.find_element_by_id("maintable")
+        rows = table.find_elements_by_name("entry")
+        for row in rows:
+            ind = row.find_element_by_name("selected[]").get_attribute("value")
+            if str(ind) == str(id):
+                cells = row.find_elements_by_tag_name("td")
+                firstname = cells[2].text
+                lastname = cells[1].text
+                address = cells[3].text
+                all_emails = cells[4].text
+                all_phones = cells[5].text
+                contact = Contact(id=id, firstname=firstname, lastname=lastname,
+                                  address=address, all_emails_from_home_page=all_emails,
+                                  all_phones_from_home_page=all_phones)
+        return contact
