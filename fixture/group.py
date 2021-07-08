@@ -49,14 +49,27 @@ class GroupHelper:
         driver = self.app.driver
         driver.find_elements_by_name("selected[]")[index].click()
 
-    def delete_first_from_home(self):
+    def select_by_id(self, id):
         driver = self.app.driver
-        self.delete_by_index(0)
+        driver.find_element_by_css_selector(f"input[value='{id}']").click()
 
     def delete_by_index(self, index):
         driver = self.app.driver
         self.open_page_group()
         self.select_by_index(index)
+        driver.find_element_by_name("delete").click()
+        driver.find_element_by_link_text("group page").click()
+        driver.find_element_by_link_text("home").click()
+        self.group_cache = None
+
+    def delete_first_from_home(self):
+        driver = self.app.driver
+        self.delete_by_index(0)
+
+    def delete_by_id(self, id):
+        driver = self.app.driver
+        self.open_page_group()
+        self.select_by_id(id)
         driver.find_element_by_name("delete").click()
         driver.find_element_by_link_text("group page").click()
         driver.find_element_by_link_text("home").click()
