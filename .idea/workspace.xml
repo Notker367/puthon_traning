@@ -19,10 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №14: Реализовать проверки для всех полей контакта на главной странице&#10;&#10; fix">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="7_8 work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/check_db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_db_connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/orm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contact/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contact/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_del_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contact/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_edit_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/group/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/group/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_del_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/group/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_edit_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +74,7 @@
       <recent name="D:\python\project\puthon_traning\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.check_db_connection">
+  <component name="RunManager" selected="Python tests.pytest in group">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,48 +88,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="check_db_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="puthon_traning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\python\project\PaytonForTestAuriga\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_db_connection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="contact" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="puthon_traning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\python\project\PaytonForTestAuriga\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generator" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator/contact.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,7 +117,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_data_contact.test_case_1_rdm_contact_data_from_homepage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_del_contact.test_case_1_delete_rdm_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -164,11 +129,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_data_contact.test_case_1_rdm_contact_data_from_homepage&quot;" />
+      <option name="_new_target" value="&quot;test_del_contact.test_case_1_delete_rdm_contact&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_phones_contact.test_case_1_phones_on_home_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_edit_contact.test_case_1_edit_rdm_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,11 +145,27 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_phones_contact.test_case_1_phones_on_home_page&quot;" />
+      <option name="_new_target" value="&quot;test_edit_contact.test_case_1_edit_rdm_contact&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_del_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_edit_group.test_case_1_edit_rdm_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="puthon_traning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/group" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_edit_group.test_case_1_edit_rdm_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -196,25 +177,41 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/contact/test_del_contact.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/contact&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="puthon_traning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/group" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/group&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.check_db_connection" />
-      <item itemvalue="Python.contact" />
-      <item itemvalue="Python tests.pytest in test_del_contact.py" />
-      <item itemvalue="Python tests.pytest for test_data_contact.test_case_1_rdm_contact_data_from_homepage" />
-      <item itemvalue="Python tests.pytest for test_phones_contact.test_case_1_phones_on_home_page" />
+      <item itemvalue="Python tests.pytest for test_del_contact.test_case_1_delete_rdm_contact" />
+      <item itemvalue="Python tests.pytest for test_edit_contact.test_case_1_edit_rdm_contact" />
+      <item itemvalue="Python tests.pytest for test_edit_group.test_case_1_edit_rdm_group" />
+      <item itemvalue="Python tests.pytest in contact" />
+      <item itemvalue="Python tests.pytest in group" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.check_db_connection" />
-        <item itemvalue="Python tests.pytest for test_phones_contact.test_case_1_phones_on_home_page" />
-        <item itemvalue="Python tests.pytest for test_data_contact.test_case_1_rdm_contact_data_from_homepage" />
-        <item itemvalue="Python tests.pytest in test_del_contact.py" />
-        <item itemvalue="Python.contact" />
+        <item itemvalue="Python tests.pytest in group" />
+        <item itemvalue="Python tests.pytest in contact" />
+        <item itemvalue="Python tests.pytest for test_edit_group.test_case_1_edit_rdm_group" />
+        <item itemvalue="Python tests.pytest for test_edit_contact.test_case_1_edit_rdm_contact" />
+        <item itemvalue="Python tests.pytest for test_del_contact.test_case_1_delete_rdm_contact" />
       </list>
     </recent_temporary>
   </component>
@@ -228,13 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624213190661</updated>
-    </task>
-    <task id="LOCAL-00019" summary="выделл создание фикстуры в отдельный файл">
-      <created>1624631913432</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1624631913432</updated>
     </task>
     <task id="LOCAL-00020" summary="фикстура вызывается на сессию, а не на конкретный тест&#10;Доработал метод logout_from_homepage - теперь ждет появления окна входа, ддлоя корректноогго выхода из профиля">
       <created>1624632698383</created>
@@ -572,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625766615697</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="7_8 work">
+      <created>1625770944492</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1625770944492</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +585,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задание №11: Реализовать проверки в виде сравнения списков&#10;for edit" />
     <MESSAGE value="add cache" />
     <MESSAGE value="Задание №12: Реализовать кеширование при загрузке списков групп и контактов&#10;for group" />
     <MESSAGE value="Задание №12: Реализовать кеширование при загрузке списков групп и контактов&#10;for contact" />
@@ -613,7 +609,8 @@
     <MESSAGE value="Задание №19: Реализовать загрузку тестовых данных из файлов&#10; fix" />
     <MESSAGE value="Задание №17: Реализовать загрузку информации о тестируемом приложении из конфигурационного файла&#10; fix" />
     <MESSAGE value="Задание №14: Реализовать проверки для всех полей контакта на главной странице&#10;&#10; fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №14: Реализовать проверки для всех полей контакта на главной странице&#10;&#10; fix" />
+    <MESSAGE value="7_8 work" />
+    <option name="LAST_COMMIT_MESSAGE" value="7_8 work" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1625743895853">
@@ -625,11 +622,11 @@
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681853341" />
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625743432546" />
-    <state x="2023" y="80" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1625766693147">
+    <state x="2023" y="80" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1625771769615">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625615849205" />
-    <state x="2023" y="80" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625766693147" />
+    <state x="2023" y="80" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625771769615" />
     <state x="2652" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1625696796503">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -647,46 +644,46 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625672871328" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625770748250">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625778842370">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625770748250" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625770748250">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625778842370" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625778842369">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625770748250" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625770748249">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625778842369" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625778842369">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625770748249" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625770748250">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625778842369" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625778842370">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625770748250" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1625766552793">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625778842370" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1625777922851">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681528782" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625766552793" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1625766552793">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625777922851" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1625777922851">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681528782" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625766552793" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1625766552793">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625777922851" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1625777922851">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681528782" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625766552793" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1625766552793">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625777922851" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1625777922851">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681528782" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625766552793" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625777922851" />
     <state x="2695" y="454" key="ReplaceDuplicatesPrompt" timestamp="1624830489093">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -724,5 +721,16 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2543" y="225" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625504566898" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fixture/contact.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -41,6 +41,17 @@ class GroupHelper:
         driver.find_element_by_link_text("home").click()
         self.group_cache = None
 
+    def edit_by_id(self, id, group):
+        driver = self.app.driver
+        self.open_page_group()
+        self.select_by_id(id=id)
+        driver.find_element_by_name("edit").click()
+        self.fill_form_group(group)
+        driver.find_element_by_name("update").click()
+        driver.find_element_by_link_text("group page").click()
+        driver.find_element_by_link_text("home").click()
+        self.group_cache = None
+
     def select_first_group(self):
         driver = self.app.driver
         self.select_by_index(0)
@@ -104,3 +115,8 @@ class GroupHelper:
                 value = element.find_element_by_name("selected[]").get_attribute("value")
                 self.group_cache.append(Group(name=text, id=value))
         return list(self.group_cache)
+
+    def create_if_not_exist(self, db, group=Group(name="new_contact_for_tests")):
+        driver = self.app.driver
+        if len(db.get_group_list()) == 0:
+            self.create_from_home(group)

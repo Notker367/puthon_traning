@@ -58,6 +58,7 @@ class ContactHelper:
 
     def create_from_home(self, contact=default_contact_for_tests):
         driver = self.app.driver
+        self.open_home_page()
         self.open_addnew_page()
         self.fill_form_contact(contact)
         driver.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
@@ -81,6 +82,14 @@ class ContactHelper:
         driver.find_element_by_link_text("home page").click()
         self.contact_cache = None
 
+    def edit_by_id(self, id, contact):
+        driver = self.app.driver
+        self.open_editor_by_id(id)
+        self.fill_form_contact(contact)
+        driver.find_element_by_name("update").click()
+        driver.find_element_by_link_text("home page").click()
+        self.contact_cache = None
+
     def open_editor_first(self):
         driver = self.app.driver
         self.open_editor_by_index(0)
@@ -90,6 +99,11 @@ class ContactHelper:
         self.open_home_page()
         driver.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
 
+    def open_editor_by_id(self, id):
+        driver = self.app.driver
+        self.open_home_page()
+        driver.find_element_by_xpath(f'//a[@href="edit.php?id={id}"]').click()
+
     def delete_first(self):
         driver = self.app.driver
         self.delete_by_index(0)
@@ -97,6 +111,13 @@ class ContactHelper:
     def delete_by_index(self, index):
         driver = self.app.driver
         self.open_editor_by_index(index)
+        driver.find_element_by_xpath("//input[@value='Delete']").click()
+        self.contact_cache = None
+
+    def delete_contact_by_id(self, id):
+        driver = self.app.driver
+        self.open_home_page()
+        self.open_editor_by_id(id)
         driver.find_element_by_xpath("//input[@value='Delete']").click()
         self.contact_cache = None
 
@@ -115,9 +136,9 @@ class ContactHelper:
         self.open_home_page()
         return len(driver.find_elements_by_xpath("//img[@alt='Edit']"))
 
-    def create_if_not_exist(self, contact=Contact(firstname="new_contact_for_tests")):
+    def create_if_not_exist(self, db, contact=Contact(firstname="new_contact_for_tests")):
         driver = self.app.driver
-        if self.count() == 0:
+        if len(db.get_contact_list()) == 0:
             self.create_from_home(contact)
 
     def open_home_page(self):
@@ -195,5 +216,3 @@ class ContactHelper:
                    map(map_clearing,
                        filter(lambda x: x is not None,
                               attributes))))
-
-
