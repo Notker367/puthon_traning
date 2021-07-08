@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №19: Реализовать загрузку тестовых данных из файлов&#10; fix">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №17: Реализовать загрузку информации о тестируемом приложении из конфигурационного файла&#10; fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contact/test_data_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_data_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/contact/test_phones_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/contact/test_phones_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
       <recent name="D:\python\project\puthon_traning\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_del_contact.py">
+  <component name="RunManager" selected="Python tests.pytest for test_phones_contact.test_case_1_phones_on_home_page">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,35 +153,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_add_group.test_case_1_add_new_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_data_contact.test_case_1_rdm_contact_data_from_homepage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/group" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/contact" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add_group.test_case_1_add_new_group&quot;" />
+      <option name="_new_target" value="&quot;test_data_contact.test_case_1_rdm_contact_data_from_homepage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_del_group.test_case_1_delete_some_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_phones_contact.test_case_1_phones_on_home_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="puthon_traning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/group" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/contact" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;--check_ui&quot;" />
-      <option name="_new_target" value="&quot;test_del_group.test_case_1_delete_some_group&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_phones_contact.test_case_1_phones_on_home_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -201,19 +203,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.test" />
-      <item itemvalue="Python tests.pytest for test_add_group.test_case_1_add_new_group" />
-      <item itemvalue="Python tests.pytest for test_del_group.test_case_1_delete_some_group" />
       <item itemvalue="Python.check_db_connection" />
       <item itemvalue="Python.contact" />
       <item itemvalue="Python tests.pytest in test_del_contact.py" />
+      <item itemvalue="Python tests.pytest for test_data_contact.test_case_1_rdm_contact_data_from_homepage" />
+      <item itemvalue="Python tests.pytest for test_phones_contact.test_case_1_phones_on_home_page" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_phones_contact.test_case_1_phones_on_home_page" />
+        <item itemvalue="Python tests.pytest for test_data_contact.test_case_1_rdm_contact_data_from_homepage" />
         <item itemvalue="Python tests.pytest in test_del_contact.py" />
         <item itemvalue="Python.contact" />
         <item itemvalue="Python.check_db_connection" />
-        <item itemvalue="Python tests.pytest for test_add_group.test_case_1_add_new_group" />
-        <item itemvalue="Python tests.pytest for test_del_group.test_case_1_delete_some_group" />
       </list>
     </recent_temporary>
   </component>
@@ -227,13 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624213190661</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Задание №5: Реализовать двухуровневую архитектуру тестов">
-      <created>1624483276267</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1624483276267</updated>
     </task>
     <task id="LOCAL-00018" summary="refactor test cases">
       <created>1624631182815</created>
@@ -571,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625759769611</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Задание №17: Реализовать загрузку информации о тестируемом приложении из конфигурационного файла&#10; fix">
+      <created>1625761815068</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1625761815068</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +589,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задание №11: Реализовать проверки в виде сравнения списков&#10;for add" />
     <MESSAGE value="Задание №11: Реализовать проверки в виде сравнения списков&#10;for del" />
     <MESSAGE value="Задание №11: Реализовать проверки в виде сравнения списков&#10;for edit" />
     <MESSAGE value="add cache" />
@@ -612,7 +613,8 @@
     <MESSAGE value="7_5" />
     <MESSAGE value="7_7_b" />
     <MESSAGE value="Задание №19: Реализовать загрузку тестовых данных из файлов&#10; fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №19: Реализовать загрузку тестовых данных из файлов&#10; fix" />
+    <MESSAGE value="Задание №17: Реализовать загрузку информации о тестируемом приложении из конфигурационного файла&#10; fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №17: Реализовать загрузку информации о тестируемом приложении из конфигурационного файла&#10; fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1625743895853">
@@ -646,26 +648,26 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625672871328" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625761726241">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625766338958">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625761726241" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625761726241">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625766338958" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625766338958">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625761726241" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625761726241">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625766338958" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625766338958">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625761726241" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625761726241">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625766338958" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625766338958">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625681857663" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625761726241" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625766338958" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1625681528782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -694,11 +696,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224131204" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625759798942">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625761822057">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625616038895" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625759798942" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625761822057" />
     <state x="2689" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624833409928">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -707,10 +709,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="131" y="-20" width="1600" height="651" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624829175362" />
-    <state x="2587" y="119" width="585" height="801" key="find.popup" timestamp="1625760881515">
+    <state x="2587" y="119" width="585" height="801" key="find.popup" timestamp="1625761776649">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2587" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625760881515" />
+    <state x="2587" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625761776649" />
     <state x="2723" y="292" width="575" height="455" key="refactoring.ChangeSignatureDialog" timestamp="1624831314673">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

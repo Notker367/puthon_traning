@@ -5,7 +5,7 @@ def test_case_1_phones_on_home_page(app):
     contact_from_edit_page = app.contact.get_contact_info_from_edit_page(0)
     assert contact_from_home_page.all_phones_from_home_page \
            == app.contact.merge_for_contact_it_attributes(
-                        attributes=all_phones(contact_from_edit_page))
+                        attributes=all_phones(contact_from_edit_page), map_clearing=app.contact.clear_merge_attributes)
 
 
 def all_phones(contact):

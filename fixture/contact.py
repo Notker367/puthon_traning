@@ -189,9 +189,11 @@ class ContactHelper:
         driver = self.app.driver
         return re.sub("[() -]", "", s)
 
-    def merge_for_contact_it_attributes(self, attributes):
+    def merge_for_contact_it_attributes(self, attributes, map_clearing=(lambda x: x)):
         return "\n".join(
             filter(lambda x: x != "",
-                   map(self.clear_merge_attributes,
+                   map(map_clearing,
                        filter(lambda x: x is not None,
                               attributes))))
+
+
