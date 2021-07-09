@@ -1,5 +1,4 @@
 import random
-from model.contact import Contact
 from model.group import Group
 
 
@@ -26,7 +25,6 @@ def test_case_2_del_contact_from_group(app, orm):
         groups_with_contacts = orm.get_not_empty_groups()
     group = random.choice(groups_with_contacts)
     contacts = orm.get_contacts_in_group(group)
-    print("debug")
     contact = random.choice(contacts)
     app.contact.delete_from_group_by_id(contact.id, group.name)
     contacts_in_group = list(orm.get_contacts_in_group(Group(id=group.id)))
