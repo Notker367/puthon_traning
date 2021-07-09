@@ -235,3 +235,21 @@ class ContactHelper:
                                   address=address, all_emails_from_home_page=all_emails,
                                   all_phones_from_home_page=all_phones)
         return contact
+
+    def add_to_group_by_id(self, contact_id, group_name):
+        driver = self.app.driver
+        self.open_home_page()
+        Select(driver.find_element_by_name("group")).select_by_visible_text("[none]")
+        driver.find_element_by_id(contact_id).click()
+        driver.find_element_by_name("to_group").click()
+        Select(driver.find_element_by_name("to_group")).select_by_visible_text(group_name)
+        driver.find_element_by_name("add").click()
+
+    def delete_from_group_by_id(self, contact_id, group_name):
+        driver = self.app.driver
+        self.open_home_page()
+        driver.find_element_by_name("group").click()
+        Select(driver.find_element_by_name("group")).select_by_visible_text(group_name)
+        driver.find_element_by_id(contact_id).click()
+        driver.find_element_by_name("remove").click()
+        driver.find_element_by_link_text(f'group page "{group_name}"').click()

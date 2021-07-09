@@ -28,7 +28,7 @@ class ORMFixture:
 
     def __init__(self, host, name, user, password):
         self.db.bind("mysql", host=host, database=name, user=user, password=password
-        #             , conv=decoders
+                     #             , conv=decoders
                      )
         self.db.generate_mapping()
         sql_debug(True)
@@ -63,3 +63,7 @@ class ORMFixture:
         orm_group = list(select(g for g in ORMFixture.ORMGroup if g.id == group.id))[0]
         return self.convert_contacts_to_model(
             select(c for c in ORMFixture.ORMContact if c.deprecated is None and orm_group not in c.groups))
+
+    @db_session
+    def get_not_empty_groups(self):
+        return list(select(g for g in ORMFixture.ORMGroup if len(g.contacts) > 0))
