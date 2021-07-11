@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы&#10;fix">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="requirements.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -221,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624213190661</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Разбросал группы тестов по папкам&#10;&#10;Оптимизация ввода данных в формы&#10;&#10;валидация фикстуры перед каждым тестом">
-      <created>1624800283132</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1624800283132</updated>
     </task>
     <task id="LOCAL-00028" summary="Разбросал группы тестов по папкам&#10;&#10;Оптимизация ввода данных в формы&#10;&#10;валидация фикстуры перед каждым тестом">
       <created>1624828923306</created>
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626018365145</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="requirements.txt">
+      <created>1626023738837</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1626023738837</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +581,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задание №13: Доработать тесты так, чтобы в них удалялся или модифицировался случайно выбранный элемент" />
     <MESSAGE value="5_2 лекция" />
     <MESSAGE value="5_3 лекция" />
     <MESSAGE value="Задание №14: Реализовать проверки для всех полей контакта на главной странице" />
@@ -606,7 +605,8 @@
     <MESSAGE value="Задание №21: Переделать тесты для проверки информации о контактах на главной странице" />
     <MESSAGE value="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы" />
     <MESSAGE value="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы&#10;fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы&#10;fix" />
+    <MESSAGE value="requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1625743895853">
@@ -649,25 +649,25 @@
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626022025102" />
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625672871328" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1626016970196">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1626025199908">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625937753831" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626025199908" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626016970196" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1626016970196">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1626025199908">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625937753831" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626025199908" />
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626016970196" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1626016970196">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1626025199908">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625937753831" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626025199908" />
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626016970196" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1626016970196">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1626025199908">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625937753831" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626025199908" />
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626016970196" />
     <state width="936" height="348" key="GridCell.Tab.1.bottom" timestamp="1625937753832">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -697,10 +697,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224131204" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1626018371810">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1626023745345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626018371810" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626023745345" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625794171685" />
     <state x="2689" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624833409928">
       <screen x="1920" y="0" width="1920" height="1040" />
