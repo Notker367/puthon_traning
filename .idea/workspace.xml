@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы&#10;fix" />
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы&#10;fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,16 +53,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python\project\puthon_traning" />
+      <recent name="D:\python\project\puthon_traning\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python\project\puthon_traning\tests\contact" />
       <recent name="D:\python\project\puthon_traning\tests\group" />
       <recent name="D:\python\project\puthon_traning" />
       <recent name="D:\python\project\puthon_traning\test" />
       <recent name="D:\python\project\puthon_traning\fixture" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\python\project\puthon_traning" />
-      <recent name="D:\python\project\puthon_traning\test" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.pytest for test_move_contact_to_group.test_case_1_add_rdm_contact_to_rdm_group">
@@ -219,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624213190661</updated>
-    </task>
-    <task id="LOCAL-00026" summary=" в методах удаления и модификации контакта добавил в начале переход на страницу контактов">
-      <created>1624793286965</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1624793286965</updated>
     </task>
     <task id="LOCAL-00027" summary="Разбросал группы тестов по папкам&#10;&#10;Оптимизация ввода данных в формы&#10;&#10;валидация фикстуры перед каждым тестом">
       <created>1624800283132</created>
@@ -563,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626017073032</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы&#10;fix">
+      <created>1626018365145</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1626018365145</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -642,9 +644,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="582" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624213475597" />
-    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1625672871328">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1626022025102">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626022025102" />
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625672871328" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1626016970196">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -694,10 +697,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224131204" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625854835738">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1626018371810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625854835738" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626018371810" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625794171685" />
     <state x="2689" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624833409928">
       <screen x="1920" y="0" width="1920" height="1040" />
