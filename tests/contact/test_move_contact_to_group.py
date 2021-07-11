@@ -1,16 +1,23 @@
 import random
 from model.group import Group
+from model.contact import Contact
 
 
 def test_case_1_add_rdm_contact_to_rdm_group(app, orm):
     app.group.create_if_not_exist(orm)
     app.contact.create_if_not_exist(orm)
-    contacts = orm.get_contact_list()
-    contact = random.choice(contacts)
     groups = orm.get_group_list()
     group = random.choice(groups)
+    contacts = orm.get_contacts_not_in_group(Group(id=group.id))
+    if not contacts:
+        app.contact.create(Contact(firstname="Name"))
+        contacts = orm.get_contacts_not_in_group(Group(id=group.id))
+    contact = random.choice(contacts)
+    old_contacts_from_group = list(orm.get_contacts_in_group(Group(id=group.id)))
     app.contact.add_to_group_by_id(contact.id, group.name)
     contacts_in_group = list(orm.get_contacts_in_group(group))
+    new_contacts_from_group = list(orm.get_contacts_in_group(Group(id=group.id)))
+    assert len(old_contacts_from_group) + 1 == len(new_contacts_from_group)
     assert contact in contacts_in_group
 
 
