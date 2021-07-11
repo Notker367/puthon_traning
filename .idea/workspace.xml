@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №28: Настроить запуск тестов на сервере непрерывной интеграции">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="10_4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/group/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/group/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624213190661</updated>
-    </task>
-    <task id="LOCAL-00029" summary="изменения в контакты">
-      <created>1624833353643</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1624833353643</updated>
     </task>
     <task id="LOCAL-00030" summary="Задание №8: Реализовать проверку валидности фикстуры и проверку состояния сессии&#10;Правки">
       <created>1625092321006</created>
@@ -566,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626026654530</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="10_4">
+      <created>1626029032743</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1626029032743</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +583,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="5_3 лекция" />
     <MESSAGE value="Задание №14: Реализовать проверки для всех полей контакта на главной странице" />
     <MESSAGE value="Задание №14: Реализовать проверки для всех полей контакта на главной странице&#10;hot_fix" />
     <MESSAGE value="fix get_logged_user" />
@@ -607,7 +607,8 @@
     <MESSAGE value="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы&#10;fix" />
     <MESSAGE value="requirements.txt" />
     <MESSAGE value="Задание №28: Настроить запуск тестов на сервере непрерывной интеграции" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №28: Настроить запуск тестов на сервере непрерывной интеграции" />
+    <MESSAGE value="10_4" />
+    <option name="LAST_COMMIT_MESSAGE" value="10_4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1625743895853">
