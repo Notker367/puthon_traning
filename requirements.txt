@@ -4,4 +4,11 @@ selenium
 jsonpickle
 pony
 pymysql
+allure-pytest
+lxml
 mysql-connector-python-rf
+
+
+
+
+py.test --alluredir allure-results tests\group\test_add_group.py

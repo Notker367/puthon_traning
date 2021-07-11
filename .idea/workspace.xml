@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="requirements.txt">
+    <list default="true" id="1d260fc5-33ee-4a3b-8ac4-4f4867101374" name="Default Changelist" comment="Задание №28: Настроить запуск тестов на сервере непрерывной интеграции">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,13 +222,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624213190661</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Разбросал группы тестов по папкам&#10;&#10;Оптимизация ввода данных в формы&#10;&#10;валидация фикстуры перед каждым тестом">
-      <created>1624828923306</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1624828923306</updated>
     </task>
     <task id="LOCAL-00029" summary="изменения в контакты">
       <created>1624833353643</created>
@@ -565,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626023738837</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Задание №28: Настроить запуск тестов на сервере непрерывной интеграции">
+      <created>1626026654530</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1626026654530</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +582,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="5_2 лекция" />
     <MESSAGE value="5_3 лекция" />
     <MESSAGE value="Задание №14: Реализовать проверки для всех полей контакта на главной странице" />
     <MESSAGE value="Задание №14: Реализовать проверки для всех полей контакта на главной странице&#10;hot_fix" />
@@ -606,7 +606,8 @@
     <MESSAGE value="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы" />
     <MESSAGE value="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы&#10;fix" />
     <MESSAGE value="requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt" />
+    <MESSAGE value="Задание №28: Настроить запуск тестов на сервере непрерывной интеграции" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №28: Настроить запуск тестов на сервере непрерывной интеграции" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1625743895853">
@@ -697,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624224131204" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1626023745345">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1626026660284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626023745345" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1626026660284" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625794171685" />
     <state x="2689" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624833409928">
       <screen x="1920" y="0" width="1920" height="1040" />
