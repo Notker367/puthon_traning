@@ -10,7 +10,7 @@ def test_case_1_add_rdm_contact_to_rdm_group(app, orm):
     group = random.choice(groups)
     contacts = orm.get_contacts_not_in_group(Group(id=group.id))
     if not contacts:
-        app.contact.create(Contact(firstname="Name"))
+        app.contact.create_from_home(Contact(firstname="Name"))
         contacts = orm.get_contacts_not_in_group(Group(id=group.id))
     contact = random.choice(contacts)
     old_contacts_from_group = list(orm.get_contacts_in_group(Group(id=group.id)))
@@ -18,6 +18,7 @@ def test_case_1_add_rdm_contact_to_rdm_group(app, orm):
     contacts_in_group = list(orm.get_contacts_in_group(group))
     new_contacts_from_group = list(orm.get_contacts_in_group(Group(id=group.id)))
     assert len(old_contacts_from_group) + 1 == len(new_contacts_from_group)
+    contacts_in_group = list(orm.get_contacts_in_group(group))
     assert contact in contacts_in_group
 
 
